@@ -70,6 +70,8 @@ Patch44: pam-1.1.8-cve-2015-3238.patch
 # Amazon patches
 Patch100: pam-disable-systemd.patch
 
+Patch200: pam-max-resp-size-1024.patch
+
 %if %{with usrmerge}
 %define _pamlibdir %{_libdir}
 %define _pamsbindir %{_sbindir}
@@ -188,6 +190,8 @@ done
 %if %{without systemd}
 %patch100 -p1
 %endif
+
+%patch200 -p1
 
 %build
 autoreconf -i

@@ -1,0 +1,11 @@
+--- Linux-PAM-1.1.8/libpam/include/security/_pam_types.h.old    2017-05-15 16:28:01.320355127 +0900
++++ Linux-PAM-1.1.8/libpam/include/security/_pam_types.h    2017-05-15 16:28:18.952820395 +0900
+@@ -239,7 +239,7 @@ extern int pam_fail_delay(pam_handle_t *
+
+ #define PAM_MAX_NUM_MSG       32
+ #define PAM_MAX_MSG_SIZE      512
+-#define PAM_MAX_RESP_SIZE     512
++#define PAM_MAX_RESP_SIZE     1024
+
+ /* Used to pass prompting text, error messages, or other informatory
+  * text to the user.  This structure is allocated and freed by the PAM
